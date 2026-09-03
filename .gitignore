@@ -1,0 +1,180 @@
+# ============================================================
+# PacBio / long-read sequencing repository
+# Version code, workflows, configs, environments and metadata.
+# Keep raw data and reproducible pipeline outputs outside Git.
+# ============================================================
+
+# ---------- Raw PacBio data ----------
+data/raw/
+data/reads/
+raw_data/
+reads/
+downloads/
+
+*.bam
+*.bam.bai
+*.bam.csi
+*.pbi
+*.sam
+*.cram
+*.cram.crai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# PacBio dataset manifests generated during import/download.
+# Remove these rules if the XML files are part of your provenance metadata.
+*.subreadset.xml
+*.consensusreadset.xml
+*.alignmentset.xml
+*.contigset.xml
+*.transcriptset.xml
+
+# ---------- References and assemblies ----------
+references/
+reference/
+assemblies/
+assembly/
+
+*.fa
+*.fa.gz
+*.fasta
+*.fasta.gz
+*.fna
+*.fna.gz
+*.fai
+*.gzi
+*.dict
+*.mmi
+*.mmi.tmp
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+
+# ---------- Variant calls and genomic tracks ----------
+variants/
+vcf/
+calls/
+
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.vcf.gz.csi
+*.bcf
+*.bcf.csi
+*.gvcf
+*.g.vcf
+*.g.vcf.gz
+*.bed.gz
+*.bed.gz.tbi
+*.bedGraph
+*.bedgraph
+*.bigWig
+*.bw
+
+# ---------- PacBio methylation / kinetics ----------
+methylation/
+kinetics/
+*.pileup.gz
+*.pileup.gz.tbi
+*.bigbed
+*.bb
+
+# ---------- Structural-variant and assembly intermediates ----------
+pbsv_discover/
+pbsv_call/
+deepvariant_output/
+hiphase_output/
+hifiasm_output/
+ragtag_output/
+
+*.svsig.gz
+*.sigs
+*.bp.pickle
+*.bin
+*.bin.gz
+*.gfa
+*.gfa.gz
+*.paf
+*.paf.gz
+
+# ---------- Workflow engines ----------
+# Nextflow
+work/
+.nextflow/
+.nextflow.log*
+.nextflow.cache/
+timeline.html
+trace.txt
+report.html
+dag.html
+
+# Snakemake
+.snakemake/
+
+# Cromwell / WDL
+cromwell-executions/
+cromwell-workflow-logs/
+
+# Generic pipeline outputs
+results/
+output/
+outputs/
+tmp/
+temp/
+scratch/
+logs/
+*.log
+
+# ---------- Containers and archives ----------
+*.sif
+*.img
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# ---------- R ----------
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+renv/library/
+renv/staging/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- IDE and operating-system files ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- Credentials and local configuration ----------
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+*.pem
+*.key
