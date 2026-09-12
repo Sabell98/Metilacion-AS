@@ -4,7 +4,7 @@ import subprocess
 
 INPUT_DIR = "/mnt/diskrare/ESTUDIANTES/Isabella/Metilacion-AS/results/01_alignment"
 
-OUTPUT_DIR = "/mnt/diskrare/ESTUDIANTES/Isabella/Metilacion-AS/results/SNVs_deepvariant"
+OUTPUT_DIR = "/mnt/diskrare/ESTUDIANTES/Isabella/Metilacion-AS/results/02_SNVs_deepvariant"
 
 REF = "/home/rare/arlen/reference/chm13v22.fasta"
 
